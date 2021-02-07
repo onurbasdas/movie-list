@@ -17,6 +17,10 @@
 		B96596DE25D077C0004813ED /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96596DD25D077C0004813ED /* MovieService.swift */; };
 		B96596E325D08DD3004813ED /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96596E225D08DD3004813ED /* MovieStore.swift */; };
 		B96596E625D08EF6004813ED /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96596E525D08EF6004813ED /* Utils.swift */; };
+		B96596EA25D0A932004813ED /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96596E925D0A932004813ED /* Movie+Stub.swift */; };
+		B96596F025D0A97E004813ED /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = B96596ED25D0A97E004813ED /* movie_info.json */; };
+		B96596F125D0A97E004813ED /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = B96596EE25D0A97E004813ED /* search_movie.json */; };
+		B96596F225D0A97E004813ED /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B96596EF25D0A97E004813ED /* movie_list.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		B96596DD25D077C0004813ED /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		B96596E225D08DD3004813ED /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		B96596E525D08EF6004813ED /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B96596E925D0A932004813ED /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
+		B96596ED25D0A97E004813ED /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
+		B96596EE25D0A97E004813ED /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		B96596EF25D0A97E004813ED /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 		B96596B525D07529004813ED = {
 			isa = PBXGroup;
 			children = (
+				B96596EC25D0A956004813ED /* Resources */,
 				B96596C025D07529004813ED /* MovieProject */,
 				B96596BF25D07529004813ED /* Products */,
 			);
@@ -90,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				B96596D725D07686004813ED /* Movie.swift */,
+				B96596E925D0A932004813ED /* Movie+Stub.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +111,16 @@
 				B96596E225D08DD3004813ED /* MovieStore.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B96596EC25D0A956004813ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B96596ED25D0A97E004813ED /* movie_info.json */,
+				B96596EF25D0A97E004813ED /* movie_list.json */,
+				B96596EE25D0A97E004813ED /* search_movie.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +182,9 @@
 			files = (
 				B96596CE25D0752B004813ED /* LaunchScreen.storyboard in Resources */,
 				B96596CB25D0752B004813ED /* Preview Assets.xcassets in Resources */,
+				B96596F025D0A97E004813ED /* movie_info.json in Resources */,
+				B96596F125D0A97E004813ED /* search_movie.json in Resources */,
+				B96596F225D0A97E004813ED /* movie_list.json in Resources */,
 				B96596C825D0752B004813ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +200,7 @@
 				B96596C425D07529004813ED /* SceneDelegate.swift in Sources */,
 				B96596D825D07686004813ED /* Movie.swift in Sources */,
 				B96596E625D08EF6004813ED /* Utils.swift in Sources */,
+				B96596EA25D0A932004813ED /* Movie+Stub.swift in Sources */,
 				B96596C625D07529004813ED /* ContentView.swift in Sources */,
 				B96596E325D08DD3004813ED /* MovieStore.swift in Sources */,
 				B96596DE25D077C0004813ED /* MovieService.swift in Sources */,
