@@ -1,5 +1,5 @@
 //
-//  MovieBackdropCarouselView.swift
+//  MoviePosterCarousel.swift
 //  MovieProject
 //
 //  Created by Onur Başdaş on 8.02.2021.
@@ -7,21 +7,20 @@
 
 import SwiftUI
 
-struct MovieBackdropCarouselView: View {
-    
+struct MoviePosterCarousel: View {
     let title: String
     let movies: [Movie]
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 0){
+        VStack(alignment: .leading, spacing: 16){
             Text(title)
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.horizontal)
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 16){
-                    ForEach(self.movies) { movie in
-                        MovieBackdropCard(movie: movie)
-                            .frame(width: 272, height: 200)
+                    ForEach(self.movies){ movie in
+                        MoviePosterCard(movie: movie)
                             .padding(.leading, movie.id == self.movies.first!.id ? 16:0)
                             .padding(.trailing, movie.id == self.movies.last!.id ? 16:0)
                     }
@@ -31,8 +30,8 @@ struct MovieBackdropCarouselView: View {
     }
 }
 
-struct MovieBackdropCarouselView_Previews: PreviewProvider {
+struct MoviePosterCarousel_Previews: PreviewProvider {
     static var previews: some View {
-        MovieBackdropCarouselView(title: "Latest", movies: Movie.stubbedMovies)
+        MoviePosterCarousel(title: "Now Playing", movies: Movie.stubbedMovies)
     }
 }
