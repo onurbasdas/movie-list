@@ -20,7 +20,7 @@ struct MovieListView: View {
             List {
                 Group {
                     if nowPlayingState.movies != nil {
-                        MoviePosterCarousel(title: "Now Playing", movies: nowPlayingState.movies!)
+                        MoviePosterCarouselView(title: "Now Playing", movies: nowPlayingState.movies!)
                         
                     } else {
                         LoadingView(isLoading: self.nowPlayingState.isLoading, error: self.nowPlayingState.error) {
@@ -72,7 +72,7 @@ struct MovieListView: View {
                 
                 
             }
-            .navigationBarTitle("The Movie List")
+            .navigationBarTitle("The Movie List - Onur")
            
         }
         .onAppear {

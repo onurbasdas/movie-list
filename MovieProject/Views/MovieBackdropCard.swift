@@ -13,16 +13,17 @@ struct MovieBackdropCard: View {
                 
                 if self.imageLoader.image != nil {
                     Image(uiImage: self.imageLoader.image!)
-                        .resizable()
+                    .resizable()
                 }
             }
             .aspectRatio(16/9, contentMode: .fit)
             .cornerRadius(8)
             .shadow(radius: 4)
+            
             Text(movie.title)
         }
         .lineLimit(1)
-        .onAppear{
+        .onAppear {
             self.imageLoader.loadImage(with: self.movie.backdropURL)
         }
     }
