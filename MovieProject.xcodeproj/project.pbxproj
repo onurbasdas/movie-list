@@ -23,6 +23,7 @@
 		B96596F225D0A97E004813ED /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B96596EF25D0A97E004813ED /* movie_list.json */; };
 		B96596F725D0BD9B004813ED /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96596F625D0BD9B004813ED /* MovieBackdropCard.swift */; };
 		B96596FC25D0BDED004813ED /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96596FB25D0BDED004813ED /* ImageLoader.swift */; };
+		B965970125D154EA004813ED /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965970025D154EA004813ED /* MovieBackdropCarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B96596EF25D0A97E004813ED /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
 		B96596F625D0BD9B004813ED /* MovieBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
 		B96596FB25D0BDED004813ED /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B965970025D154EA004813ED /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				B96596F625D0BD9B004813ED /* MovieBackdropCard.swift */,
+				B965970025D154EA004813ED /* MovieBackdropCarouselView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B965970125D154EA004813ED /* MovieBackdropCarouselView.swift in Sources */,
 				B96596C225D07529004813ED /* AppDelegate.swift in Sources */,
 				B96596C425D07529004813ED /* SceneDelegate.swift in Sources */,
 				B96596FC25D0BDED004813ED /* ImageLoader.swift in Sources */,
